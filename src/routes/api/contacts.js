@@ -1,10 +1,10 @@
 const express = require('express');
-const { validateId, validateBody, validateToken } = require('../middleware');
+const { validateId, validateBody, validateToken } = require('../../middleware');
 const {
   postContactSchema,
   putContactSchema,
   updateStatusContactSchema,
-} = require('../../../schemas/joi/contacts');
+} = require('../../schemas/joi/contacts');
 const { asyncWrapper } = require('../../helpers');
 const {
   getContacts,

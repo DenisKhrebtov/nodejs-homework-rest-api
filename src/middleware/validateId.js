@@ -1,5 +1,5 @@
 const { isValidObjectId } = require('mongoose');
-const { HttpError } = require('../../helpers');
+const { HttpError } = require('../helpers');
 
 function validateId() {
   return (req, res, next) => {
